@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navaneethgym</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    /* changing the initial css */
+    body {
+      font-family: "Baloo 2", cursive;
+      margin: 0px;
+      padding: 0px;
+      background-image: url("backgroundimage.jpg");
+    }
+
+    .left {
+      position: absolute;
+      left: 23px;
+      top: 20px;
+      /* border: 2px solid red; */
+      display: inline-block;
+    }
+
+    .left img {
+      width: 114px;
+      display: block;
+      margin: 5px auto;
+      /* padding:0px 0px auto auto; */
+    }
+
+    .left div {
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .mid {
+      /* border: 2px solid black; */
+      display: block;
+      width: 33%;
+      margin: 20px auto;
+    }
+
+    .right {
+      position: absolute;
+      right: 23px;
+      top: 20px;
+      /* border: 2px solid blue; */
+      display: inline-block;
+    }
+
+    .navbar {
+      list-style-type: none;
+      display: inline-block;
+    }
+
+    .navbar li {
+      display: inline-block;
+    }
+
+    .navbar li a {
+      color:black;
+      text-decoration: none;
+      display: inline-block;
+      padding: 3px 23px;
+      font-size: 18px;
+    }
+
+    .navbar li a:hover {
+      text-decoration: underline;
+      color: grey;
+      cursor: pointer;
+    }
+
+    .navbar li a.active {
+      text-decoration: underline;
+      color: red;
+    }
+
+    .btn {
+      margin: 0px 8px;
+      padding: 4px 14px;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      font-family: "Baloo 2", cursive;
+    }
+
+    .btn:hover {
+      background-color: grey;
+    }
+
+    .container {
+      border: 2px solid rebeccapurple;
+      margin: 50px 480px;
+      padding: 75px 75px;
+      display: inline-block;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    .from-group input {
+      text-align: center;
+      border-radius: 3px;
+      display: block;
+      margin: 23px auto;
+      border-color: rebeccapurple;
+      width: 76%;
+      padding: 2px;
+      font-size: 22px;
+      font-family: "Baloo 2", cursive;
+      font-weight: bold;
+    }
+
+    .container button {
+      display: block;
+      width: 76%;
+      margin: auto;
+      background-color:black;
+      color: white;
+      font-family: "Baloo 2", cursive;
+      padding: 9px;
+      border-radius: 33px;
+    }
+
+    .container button:hover {
+      color: black;
+      background-color: white;
+      cursor: pointer;
+      font-family: "Baloo 2", cursive;
+    }
+
+
+    #heading {
+      display:inline-block;
+      font-size: 23px;
+      font-weight: bold;
+      margin: auto;
+      margin-left:13px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <!-- this box is for logo -->
+    <div class="left">
+      <img src="gymlogo.png" alt="" />
+      <div>Navaneeth fitness</div>
+    </div>
+    <!-- this box is for the content -->
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Tag us</a></li>
+      </ul>
+    </div>
+    <!-- this box is for the buttons -->
+    <div class="right">
+      <button class="btn">Call us</button>
+      <button class="btn">Email us</button>
+    </div>
+  </header>
+  <div class="container">
+    <h1 id="heading">Join the best gym in nitte</h1>
+    <form action="navaneeth.php">
+      <div class="from-group">
+        <input type="text" name="" placeholder="Enter your name" />
+      </div>
+      <div class="from-group">
+      <input type="text" name="" placeholder="Enter your age" />
+      </div>
+      <div class="from-group">
+        <input type="text" name="" placeholder="Enter your locality" />
+      </div>
+      <div class="from-group">
+        <input type="text" name="" placeholder="Enter your gender" />
+      </div>
+      <button class="btn2">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
